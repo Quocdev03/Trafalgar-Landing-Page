@@ -1,0 +1,65 @@
+.hero {
+    margin-bottom: 190px;
+    transition: all 0.2s linear;
+
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 109px;
+    }
+
+    &-content {
+        width: 100%;
+        max-width: 445px;
+    }
+
+    &-heading {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 117%;
+        color: $black;
+        margin-bottom: 25px;
+    }
+
+    &-desc {
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 32px;
+        color: $gray;
+        margin-bottom: 25px;
+    }
+
+    @media screen and (max-width: 1023.98px) {
+        &-heading {
+            transition: all 0.2s linear;
+            font-size: 35px;
+        }
+
+        &-desc {
+            transition: all 0.2s linear;
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (max-width: 767.98px) {
+        transition: all 0.2s linear;
+        margin-bottom: 50px;
+
+        &-main {
+            transition: all 0.2s linear;
+            flex-direction: column;
+            row-gap: 40px;
+        }
+
+        &-content>a {
+            transition: all 0.2s linear;
+            margin-bottom: 40px;
+        }
+
+        &-desc {
+            transition: all 0.2s linear;
+            margin-bottom: 25px;
+        }
+    }
+}

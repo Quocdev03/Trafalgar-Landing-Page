@@ -1,0 +1,24 @@
+// Gen Matrix Dots
+@mixin generateDots($size, $spacing, $columns, $color: $primary-color) {
+    width: $size;
+    height: $size;
+    background-color: $color;
+    border-radius: 100rem;
+    $value: ();
+
+    @for $i from 0 to $columns {
+        @for $j from 0 to $columns {
+            $x: $i * $spacing +px;
+            $y: $j * $spacing +px;
+            $theShhadow: $x $y $color;
+            $value: append($value, $theShhadow, comma);
+        }
+    }
+
+    box-shadow: $value;
+}
+
+.dots {
+    margin: 200px;
+    @include generateDots(10px, 20, 5)
+}

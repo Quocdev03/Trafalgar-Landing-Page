@@ -1,0 +1,30 @@
+.header {
+    margin-bottom: 80px;
+    transition: all 0.2s linear;
+
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 56px;
+        transition: all 0.2s linear;
+    }
+
+    &-dots {
+        left: 0;
+        top: 160px;
+        transform: translate(-30%, 0);
+    }
+
+    @media screen and (max-width: 1023.98px) {
+        margin-bottom: 40px;
+        transition: all 0.2s linear;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        &-main {
+            padding-top: 45px;
+            padding-bottom: 20px;
+        }
+    }
+}

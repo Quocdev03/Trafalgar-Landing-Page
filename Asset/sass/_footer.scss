@@ -1,0 +1,67 @@
+.footer {
+    padding: 118px 0 113px;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+
+    &-main {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        grid-gap: 34px;
+        color: #ffff;
+    }
+
+    &-logo {
+        display: inline-block;
+        margin-bottom: 17px;
+    }
+
+    &-desc {
+        display: block;
+        width: 100%;
+        max-width: 391px;
+        margin-bottom: 31px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    &-copyright {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    &-heading {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    &-link {
+        display: block;
+        color: inherit;
+        font-size: 18px;
+        margin-bottom: 20px;
+        transition: all 0.2s linear;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    @media screen and (max-width: 767.98px) {
+        transition: all 0.2s linear;
+        padding: 40px 0;
+
+        &-main {
+            grid-template-columns: 1fr 1fr;
+            transition: all 0.2s linear;
+        }
+    }
+
+    @media screen and (max-width: 374.98px) {
+        &-main {
+            transition: all 0.2s linear;
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+}
